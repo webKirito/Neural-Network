@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="title">
+        <h1 class="t-item">
+            Test Your Neural Network.
+        </h1>
+        <div class="t-item">
+            Realization of backpropogation on simple analyses of symbols and chars.
+        </div>
+        <div class="t-item">
+            Main task : 'To develop a network to recognize symbols and realization of backpropogation.'.
+        </div>
+        <button id = 'test-btn'>Test</button>
+        <div class="set-container">
+                <textarea name="test-area" id="test-area" cols="30" rows="10"></textarea>
+                <div class="set-item">
+                    <div>Number of ages</div>
+                    <input id = 'age' type="text" value="20000">
+                    <div>Speed</div>
+                    <input id = 'speed' type="text" value="0.5">
+                    <div>Test Data</div>
+                    <input id='t-data' type="text">
+                </div>
+        </div>
+        
+
+    </header>
+
+    <section class = 'main'>
+        <div class="grid-container"></div>
+        
+        <div class="main-set">
+                <button id = 'run'>Set result.</button>
+                <div>Input with spacing number of neurons in each layer.</div>
+                <input type="text" class="set-input" value="9 9 4" id = "l-n">
+                <textarea name="result" id="result" cols="30" rows="10" ></textarea>
+        </div>
+        
+    </section>
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
